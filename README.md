@@ -244,7 +244,7 @@ int main( void ) {
 ## See Also
 
 -   <span class="package-name">[`@stdlib/complex-float64/base/add`][@stdlib/complex/float64/base/add]</span><span class="delimiter">: </span><span class="description">add two double-precision complex floating-point numbers.</span>
--   <span class="package-name">[`@stdlib/math-base/ops/cmulf`][@stdlib/math/base/ops/cmulf]</span><span class="delimiter">: </span><span class="description">multiply two single-precision complex floating-point numbers.</span>
+-   <span class="package-name">[`@stdlib/complex-float32/base/mul`][@stdlib/complex/float32/base/mul]</span><span class="delimiter">: </span><span class="description">multiply two single-precision complex floating-point numbers.</span>
 -   <span class="package-name">[`@stdlib/math-base/ops/csubf`][@stdlib/math/base/ops/csubf]</span><span class="delimiter">: </span><span class="description">subtract two single-precision complex floating-point numbers.</span>
 
 </section>
@@ -327,7 +327,7 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/complex/float64/base/add]: https://github.com/stdlib-js/complex-float64-base-add
 
-[@stdlib/math/base/ops/cmulf]: https://github.com/stdlib-js/math-base-ops-cmulf
+[@stdlib/complex/float32/base/mul]: https://github.com/stdlib-js/complex-float32-base-mul
 
 [@stdlib/math/base/ops/csubf]: https://github.com/stdlib-js/math-base-ops-csubf
 
