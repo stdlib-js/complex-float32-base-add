@@ -48,7 +48,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import add from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-base-add@esm/index.mjs';
+import add from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-base-add@v0.1.0-esm/index.mjs';
 ```
 
 #### add( z1, z2 )
@@ -90,7 +90,7 @@ var im = imagf( v );
 
 import Complex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-ctor@esm/index.mjs';
 var discreteUniform = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform' ).factory;
-import add from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-base-add@esm/index.mjs';
+import add from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-base-add@v0.1.0-esm/index.mjs';
 
 var rand = discreteUniform( -50, 50 );
 
