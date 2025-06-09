@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2021 The Stdlib Authors.
@@ -16,23 +16,18 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
 
-// MODULES //
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
 
-var Complex64 = require( '@stdlib/complex-float32-ctor' );
-var addon = require( './../src/addon.node' );
-
-
-// MAIN //
+import { Complex64 } from '@stdlib/types/complex';
 
 /**
 * Adds two single-precision complex floating-point numbers.
 *
-* @private
-* @param {Complex64} z1 - complex number
-* @param {Complex64} z2 - complex number
-* @returns {Complex64} result
+* @param z1 - complex number
+* @param z2 - complex number
+* @returns result
 *
 * @example
 * var Complex64 = require( '@stdlib/complex-float32-ctor' );
@@ -42,12 +37,9 @@ var addon = require( './../src/addon.node' );
 * var out = add( z, z );
 * // returns <Complex64>[ 10.0, 6.0 ]
 */
-function add( z1, z2 ) {
-	var v = addon( z1, z2 );
-	return new Complex64( v.re, v.im );
-}
+declare function add( z1: Complex64, z2: Complex64 ): Complex64;
 
 
 // EXPORTS //
 
-module.exports = add;
+export = add;
