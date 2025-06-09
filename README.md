@@ -41,14 +41,32 @@ limitations under the License.
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/complex-float32-base-add
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import add from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-base-add@esm/index.mjs';
+var add = require( '@stdlib/complex-float32-base-add' );
 ```
 
 #### add( z1, z2 )
@@ -56,20 +74,12 @@ import add from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-base-add@
 Adds two single-precision complex floating-point numbers.
 
 ```javascript
-import Complex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-ctor@esm/index.mjs';
-import realf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-real@esm/index.mjs';
-import imagf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-imag@esm/index.mjs';
+var Complex64 = require( '@stdlib/complex-float32-ctor' );
 
 var z = new Complex64( -1.5, 2.5 );
 
 var v = add( z, z );
-// returns <Complex64>
-
-var re = realf( v );
-// returns -3.0
-
-var im = imagf( v );
-// returns 5.0
+// returns <Complex64>[ -3.0, 5.0 ]
 ```
 
 </section>
@@ -82,16 +92,11 @@ var im = imagf( v );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import Complex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@esm/index.mjs';
-import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@esm/index.mjs';
-import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@esm/index.mjs';
-import add from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-base-add@esm/index.mjs';
+```javascript
+var Complex64Array = require( '@stdlib/array-complex64' );
+var discreteUniform = require( '@stdlib/random-array-discrete-uniform' );
+var logEachMap = require( '@stdlib/console-log-each-map' );
+var add = require( '@stdlib/complex-float32-base-add' );
 
 // Generate arrays of random values:
 var z1 = new Complex64Array( discreteUniform( 200, -50, 50 ) );
@@ -99,10 +104,6 @@ var z2 = new Complex64Array( discreteUniform( 200, -50, 50 ) );
 
 // Perform element-wise addition:
 logEachMap( '(%s) + (%s) = %s', z1, z2, add );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -111,7 +112,115 @@ logEachMap( '(%s) + (%s) = %s', z1, z2, add );
 
 <!-- C interface documentation. -->
 
+* * *
 
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/complex/float32/base/add.h"
+```
+
+#### stdlib_base_complex64_add( z1, z2 )
+
+Adds two single-precision complex floating-point numbers.
+
+```c
+#include "stdlib/complex/float32/ctor.h"
+#include "stdlib/complex/float32/real.h"
+#include "stdlib/complex/float32/imag.h"
+
+stdlib_complex64_t z = stdlib_complex64( 3.0f, -2.0f );
+
+stdlib_complex64_t out = stdlib_base_complex64_add( z, z );
+
+float re = stdlib_complex64_real( out );
+// returns 6.0f
+
+float im = stdlib_complex64_imag( out );
+// returns -4.0f
+```
+
+The function accepts the following arguments:
+
+-   **z1**: `[in] stdlib_complex64_t` input value.
+-   **z2**: `[in] stdlib_complex64_t` input value.
+
+```c
+stdlib_complex64_t stdlib_base_complex64_add( const stdlib_complex64_t z1, const stdlib_complex64_t z2 );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/complex/float32/base/add.h"
+#include "stdlib/complex/float32/ctor.h"
+#include "stdlib/complex/float32/reim.h"
+#include <stdio.h>
+
+int main( void ) {
+    const stdlib_complex64_t x[] = {
+        stdlib_complex64( 3.14f, 1.5f ),
+        stdlib_complex64( -3.14f, 1.5f ),
+        stdlib_complex64( 0.0f, -0.0f ),
+        stdlib_complex64( 0.0f/0.0f, 0.0f/0.0f )
+    };
+
+    stdlib_complex64_t v;
+    stdlib_complex64_t y;
+    float re;
+    float im;
+    int i;
+    for ( i = 0; i < 4; i++ ) {
+        v = x[ i ];
+        stdlib_complex64_reim( v, &re, &im );
+        printf( "z = %f + %fi\n", re, im );
+
+        y = stdlib_base_complex64_add( v, v );
+        stdlib_complex64_reim( y, &re, &im );
+        printf( "add(z, z) = %f + %fi\n", re, im );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -138,7 +247,7 @@ logEachMap( '(%s) + (%s) = %s', z1, z2, add );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -203,11 +312,11 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/complex/float64/base/add]: https://github.com/stdlib-js/complex-float64-base-add/tree/esm
+[@stdlib/complex/float64/base/add]: https://github.com/stdlib-js/complex-float64-base-add
 
-[@stdlib/complex/float32/base/mul]: https://github.com/stdlib-js/complex-float32-base-mul/tree/esm
+[@stdlib/complex/float32/base/mul]: https://github.com/stdlib-js/complex-float32-base-mul
 
-[@stdlib/complex/float32/base/sub]: https://github.com/stdlib-js/complex-float32-base-sub/tree/esm
+[@stdlib/complex/float32/base/sub]: https://github.com/stdlib-js/complex-float32-base-sub
 
 <!-- </related-links> -->
 
