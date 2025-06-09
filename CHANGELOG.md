@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-06-04)
+## Unreleased (2025-06-09)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`74a62b6`](https://github.com/stdlib-js/stdlib/commit/74a62b6ea9087704c9890d3a220f952bc97a45c5) - **docs:** update examples for `complex/float32/base/add` [(#7288)](https://github.com/stdlib-js/stdlib/pull/7288) _(by Shabareesh Shetty)_
 -   [`920ac76`](https://github.com/stdlib-js/stdlib/commit/920ac76fffbe4c5513bc7820c09b5b5fc3b507bb) - **chore:** change naming and examples for `complex/float32/base/add` [(#7169)](https://github.com/stdlib-js/stdlib/pull/7169) _(by Shabareesh Shetty, stdlib-bot)_
 -   [`a1e230f`](https://github.com/stdlib-js/stdlib/commit/a1e230f29297caa89880e9c194c615a0400fb7bc) - **chore:** clean up cppcheck-suppress comments _(by Karan Anand)_
 -   [`89ecfe0`](https://github.com/stdlib-js/stdlib/commit/89ecfe0212aef0448017f8e404a3862fda851170) - **refactor:** update paths _(by Gururaj Gurram)_
