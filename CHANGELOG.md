@@ -4,7 +4,29 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-06-09)
+## Unreleased (2025-09-07)
+
+<section class="features">
+
+### Features
+
+-   [`7c8ed3b`](https://github.com/stdlib-js/stdlib/commit/7c8ed3b2052a00de76bfdb1a4f5a8fb31cf98881) - add strided and assign APIs to `complex/float32/base/add` [(#5391)](https://github.com/stdlib-js/stdlib/pull/5391)
+
+</section>
+
+<!-- /.features -->
+
+<section class="issues">
+
+### Closed Issues
+
+This release closes the following issue:
+
+[#5196](https://github.com/stdlib-js/stdlib/issues/5196)
+
+</section>
+
+<!-- /.issues -->
 
 <section class="commits">
 
@@ -12,6 +34,7 @@
 
 <details>
 
+-   [`7c8ed3b`](https://github.com/stdlib-js/stdlib/commit/7c8ed3b2052a00de76bfdb1a4f5a8fb31cf98881) - **feat:** add strided and assign APIs to `complex/float32/base/add` [(#5391)](https://github.com/stdlib-js/stdlib/pull/5391) _(by Shabareesh Shetty, Athan Reines, stdlib-bot)_
 -   [`74a62b6`](https://github.com/stdlib-js/stdlib/commit/74a62b6ea9087704c9890d3a220f952bc97a45c5) - **docs:** update examples for `complex/float32/base/add` [(#7288)](https://github.com/stdlib-js/stdlib/pull/7288) _(by Shabareesh Shetty)_
 -   [`920ac76`](https://github.com/stdlib-js/stdlib/commit/920ac76fffbe4c5513bc7820c09b5b5fc3b507bb) - **chore:** change naming and examples for `complex/float32/base/add` [(#7169)](https://github.com/stdlib-js/stdlib/pull/7169) _(by Shabareesh Shetty, stdlib-bot)_
 -   [`a1e230f`](https://github.com/stdlib-js/stdlib/commit/a1e230f29297caa89880e9c194c615a0400fb7bc) - **chore:** clean up cppcheck-suppress comments _(by Karan Anand)_
@@ -27,8 +50,9 @@
 
 ### Contributors
 
-A total of 3 people contributed to this release. Thank you to the following contributors:
+A total of 4 people contributed to this release. Thank you to the following contributors:
 
+-   Athan Reines
 -   Gururaj Gurram
 -   Karan Anand
 -   Shabareesh Shetty
