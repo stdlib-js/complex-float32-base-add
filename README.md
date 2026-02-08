@@ -48,13 +48,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import add from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-base-add@esm/index.mjs';
+import add from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-base-add@v0.2.1-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { assign, strided } from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-base-add@esm/index.mjs';
+import { assign, strided } from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-base-add@v0.2.1-esm/index.mjs';
 ```
 
 #### add( z1, z2 )
@@ -144,7 +144,7 @@ The function supports the following parameters:
 import Complex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@esm/index.mjs';
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@esm/index.mjs';
 import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@esm/index.mjs';
-import add from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-base-add@esm/index.mjs';
+import add from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-base-add@v0.2.1-esm/index.mjs';
 
 // Generate arrays of random values:
 var z1 = new Complex64Array( discreteUniform( 200, -50, 50 ) );
