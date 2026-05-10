@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-05-04)
+## Unreleased (2026-05-10)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`1a74bc4`](https://github.com/stdlib-js/stdlib/commit/1a74bc4653caacbd0f3f3a8cfbc1d205e3884d4b) - **test:** fix `real`/`imag` import in `complex/float32/base/add` [(#12065)](https://github.com/stdlib-js/stdlib/pull/12065) _(by Karan Anand)_
 -   [`9f41dab`](https://github.com/stdlib-js/stdlib/commit/9f41daba5e816a9e63c3b0fbfb810cee8bb01258) - **bench:** refactor to use string interpolation in `complex` [(#11620)](https://github.com/stdlib-js/stdlib/pull/11620) _(by Karan Anand)_
 
 </details>
