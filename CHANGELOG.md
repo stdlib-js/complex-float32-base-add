@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-06-12)
+## Unreleased (2026-06-18)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`f4bc442`](https://github.com/stdlib-js/stdlib/commit/f4bc442f019061ce55cc1a654722a325e35fd5f0) - **test:** remove redundant filename output in test blocks [(#12951)](https://github.com/stdlib-js/stdlib/pull/12951) _(by Abdul Kaium)_
 -   [`1a74bc4`](https://github.com/stdlib-js/stdlib/commit/1a74bc4653caacbd0f3f3a8cfbc1d205e3884d4b) - **test:** fix `real`/`imag` import in `complex/float32/base/add` [(#12065)](https://github.com/stdlib-js/stdlib/pull/12065) _(by Karan Anand)_
 -   [`9f41dab`](https://github.com/stdlib-js/stdlib/commit/9f41daba5e816a9e63c3b0fbfb810cee8bb01258) - **bench:** refactor to use string interpolation in `complex` [(#11620)](https://github.com/stdlib-js/stdlib/pull/11620) _(by Karan Anand)_
 
@@ -25,8 +26,9 @@
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 2 people contributed to this release. Thank you to the following contributors:
 
+-   Abdul Kaium
 -   Karan Anand
 
 </section>
